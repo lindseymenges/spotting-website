@@ -4,9 +4,15 @@
   <head>
     <title>Spotting!</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   </head>
 
   <body>
+    <script>
+      AOS.init({duration:1000});
+      AOS.refresh();
+    </script>
     <div class="header">
       <a href="#" class="header-logo-link"><img class="header-logo" src="./imgs/app_icon.png"></a>
       <div class="links-container">
@@ -26,29 +32,32 @@
     </div>
     <div id="details">
       <div class="section">
-        <div class="text-container">
+        <div class="text-container" data-aos="fade-right">
           <h3>Submit Requests</h3>
-          <p>Need a tampon, pad, or liner? Submit a request to let nearby Spotters know you could use some help.<br>There's no login or sign-up process: all it takes it a few taps and your request is ready to be answered.</p>
+          <p>Need a tampon, pad, or liner? Submit a request to let nearby Spotters know you could use some help.</p>
+          <p>There's no login or sign-up process: all it takes it a few taps and your request is ready to be answered.</p>
         </div>
-        <div class="image-container">
+        <div class="image-container" data-aos="fade-left">
           <img src="./imgs/screenshots/Request Options Example.png">
         </div>
       </div>
       <div class="section">
-        <div class="image-container">
+        <div class="image-container" data-aos="fade-right">
           <img src="./imgs/screenshots/Open Request Example.png">
         </div>
-        <div class="text-container right">
+        <div class="text-container right" data-aos="fade-left">
           <h3>See When People Around You Need Help</h3>
-          <p>See a request in your area? If you've got what they need, you can help them out of a tough spot.<br>Click on the map marker to see the details of a request: what the user wants, where they are, and what they look like.</p>
+          <p>See a request in your area? If you've got what they need, you can help them out of a tough spot.</p>
+          <p>Click on the map marker to see the details of a request: what the user wants, where they are, and what they look like.</p>
         </div>
       </div>
       <div class="section">
-        <div class="text-container">
+        <div class="text-container" data-aos="fade-right">
           <h3>Get Notified</h3>
-          <p>Don't worry about having the app open all the time! Spotting! will send you a notification when you are near an open request.</p>
+          <p>Don't worry about having the app open all the time!</p>
+          <p>Spotting! will send you a notification when you are near an open request.</p>
         </div>
-        <div class="image-container">
+        <div class="image-container" data-aos="fade-left">
           <img src="./imgs/notifications.png">
         </div>
       </div>
@@ -56,19 +65,24 @@
     <div class="section" id="download">
       <h3>Download</h3>
       <div class="download-badges">
-        <a href="https://itunes.apple.com/us/app/spotting/id1368245673?ls=1&mt=8" target="_blank"><img src="./imgs/ios_app_store_badge.svg"></a>
-        <p style="font-style:italic;">Coming Soon to Android</p>
+        <div class="apple-link" data-aos="fade-right">
+          <a href="https://itunes.apple.com/us/app/spotting/id1368245673?ls=1&mt=8" target="_blank"><img src="./imgs/ios_app_store_badge.svg"></a>
+        </div>
+        <div class="google-link" data-aos="fade-left">
+          <img src="./imgs/google-play-badge.png">
+          <p>Coming soon to Google Play</p>
+        </div>
       </div>
     </div>
     <div class="section" id="contact">
-      <div class="text-container">
+      <div class="text-container" data-aos="fade-right">
         <h3>About The Creator</h3>
         <p>Lindsey is developer in the Bay Area who created Spotting! because she wants to help make periods a little less uncomfortable. You can learn more about Lindsey and her other projects at</p>
         <div class="external-link">  
           <a class="creator-website" href="http://lindseymenges.com" target="_blank">lindseymenges.com</a>
         </div>
       </div>
-      <div class="text-container">
+      <div class="text-container" data-aos="fade-left">
         <h3>Contact</h3>
         <p>Comments? Questions? Thought of another period pun that isn't on the site? I'd love to hear from you!</p>
         <div class="external-link">
