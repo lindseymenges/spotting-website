@@ -150,7 +150,7 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
     justify-content: space-between;
   }
 }
-@media (max-width: 800px){
+@media (max-width: 1080px){
   #contact {
     display:flex;
     flex-direction: column;
