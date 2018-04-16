@@ -109,9 +109,8 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
 .section.description{
   align-items: center;
   display: flex;
-  padding-top:75px;
+  padding-top:85px;
   flex-direction: column;
-  height: -webkit-calc(100vh - 75px);
 }
 .section.middle-detail {
   flex-direction: row-reverse;
@@ -149,7 +148,7 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
     flex-direction: column;
     justify-content: space-between;
   }
-  /*TODO: Add some fixes for details overlapping*/
+  /*TODO: Add some fixes for details & download badges overlapping*/
 }
 @media (max-width: 1080px){
   .section, .section.middle-detail {
