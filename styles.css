@@ -149,6 +149,7 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
     flex-direction: column;
     justify-content: space-between;
   }
+  /*TODO: Add some fixes for details overlapping*/
 }
 @media (max-width: 1080px){
   .section, .section.middle-detail {
@@ -173,20 +174,24 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
   .section#download {
     height: -webkit-calc(50vh - 75px);
   }
-  .download-badges .apple-link, .google-link {
-    display: flex;
+  #download .download-badges {
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height:100%;
   }
   #contact .text-container {
     width:100%;
     margin: 20px 0;
   }
-  #download .download-badges {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+@media (max-width: 675px){
+  #download .download-badges img {
+    width:100%;
   }
-  #download .download-badges a { width: 100%; }
-  #download .download-badges img { width: 100%; }
+  .google-link p {
+    text-align: center;
+  }
 }
