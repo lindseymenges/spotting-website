@@ -109,8 +109,9 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
 .section.description{
   align-items: center;
   display: flex;
-  padding-top:85px;
   flex-direction: column;
+  justify-content: center;
+  height: -webkit-calc(100vh - 85px);
 }
 .section.middle-detail {
   flex-direction: row-reverse;
@@ -139,10 +140,17 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
 
 #download .download-badges img { width: 60%; }
 
-@media (max-height: 730px){
-  /*TODO: Add some fixes for details & download badges overlapping*/
+@media (max-height: 600px) {
+  .section.description {
+    height: 100%;
+  }
+  /*TODO: Add some fixes for download badges overlapping*/
 }
-
+@media (max-height: 700px) and (max-width: 1080px){
+  .section.description {
+    height: 100%;
+  }
+}
 @media (max-width: 1080px){
   .section, .section.middle-detail {
     flex-direction: column;
@@ -163,7 +171,7 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
     flex-direction: column;
     height: -webkit-calc(100vh - 75px);
   }
-  .section#download {
+  #download {
     height: -webkit-calc(50vh - 75px);
   }
   #download .download-badges {
