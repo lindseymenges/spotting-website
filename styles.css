@@ -18,7 +18,7 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
   padding:10px 15px;
   margin-top:15px;
 }
-.description h2 {
+.description h1, .description h2, .description h3 {
   text-align: center;
 }
 .description .summary{
@@ -107,7 +107,7 @@ a {color:#C8391F; font-weight:bold; text-decoration: none;}
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75%; 
+  width: 75%;
   height:75%;
 }
 .store-link a {
